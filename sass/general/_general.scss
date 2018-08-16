@@ -1,0 +1,20 @@
+.standard-content {
+    width: 84.722%;
+    margin: 0 auto;
+    padding: 30px 20px 80px 20px;
+    @include clearfix;
+}
+
+@include tab {
+    .standard-content {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+@include phone {
+    .standard-content {
+        width: 100%;
+        padding: 20px;
+    }
+}

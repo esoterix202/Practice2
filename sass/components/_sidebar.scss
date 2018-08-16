@@ -1,0 +1,156 @@
+.sidebar {
+    float: left;
+    width: 23.729%;
+    &>h2 {
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-cyan2;
+        font-size: 22px;
+        font-weight: 600px;
+        color: $color-grey;
+    }
+}
+
+.error-sidebar {
+    float: left;
+    width: 23.729%;
+    &>h2 {
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-cyan2;
+        font-size: 22px;
+        font-weight: 600px;
+        color: $color-grey;
+    }
+}
+
+.sidebar-cascade__level1 {
+    list-style: none;
+}
+
+.sidebar-cascade__level1>li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    &:first-child {
+        margin-top: 15px;
+    }
+    &>a {
+        color: $color-grey;
+        transition: all .3s;
+        &.active {
+            color: $color-cyan2;
+        }
+        &:hover {
+            color: $color-cyan2;
+            border-bottom: 1px solid $color-cyan2;
+        }
+        &:focus {
+            font-weight: 600;
+        }
+    }
+}
+
+.sidebar-cascade__level2 {
+    display: none;
+    list-style: none;
+}
+
+.sidebar-cascade__level2>li {
+    font-size: 16px;
+    font-weight: 300;
+    &:first-child {
+        margin-top: 12px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    &>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-left: 15px;
+        color: $color-grey;
+        transition: all .3s;
+        &:hover {
+            color: $color-cyan2;
+        }
+        &:focus {
+            font-weight: 600;
+        }
+    }
+}
+
+.search-sidebar {
+    float: left;
+    width: 23.729%;
+    &>h2 {
+        padding-bottom: 10px;
+        border-bottom: 2px solid $color-cyan2;
+        font-size: 22px;
+        font-weight: 600px;
+        color: $color-grey;
+    }
+}
+
+.search-sidebar__search-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.search-sidebar__search-bar>input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid $color-cyan2;
+    background-image: url('../img/magnify.png');
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    background-color: $color-white;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    &:focus {
+        outline: none;
+        border: 1px solid $color-yellow;
+    }
+    &::-webkit-input-placeholder {
+        font-size: 14px;
+        font-weight: 300;
+        color: lightgrey;
+    }
+    &:-ms-input-placeholder {
+        font-size: 14px;
+        font-weight: 300;
+        color: lightgrey;
+    }
+    &::-ms-input-placeholder {
+        font-size: 14px;
+        font-weight: 300;
+        color: lightgrey;
+    }
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 300;
+        color: lightgrey;
+    }
+}
+
+@include phone {
+    .sidebar {
+        display: none;
+    }
+    .error-sidebar {
+        display: none;
+    }
+    .search-sidebar {
+        float: none;
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        &>h2 {
+            display: none;
+        }
+    }
+}

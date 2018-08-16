@@ -1,0 +1,21 @@
+@import "../sass/abstracts/_functions.scss";
+@import "../sass/abstracts/_mixins.scss";
+@import "../sass/abstracts/_variables.scss";
+
+@import "../sass/base/_base.scss";
+@import "../sass/base/_utilities.scss";
+
+@import "../sass/general/_general.scss";
+
+@import "../sass/components/_content.scss";
+@import "../sass/components/_slider.scss";
+@import "../sass/components/_text-block.scss";
+@import "../sass/components/_sidebar.scss";
+
+@import "../sass/shared/_header.scss";
+@import "../sass/shared/_footer.scss";
+@import "../sass/shared/_breadcrumbs.scss";
+@import "../sass/shared/_banner.scss";
+
+@import "../assets/Slick/slick/slick-theme.scss";
+@import "../assets/Slick/slick/slick.scss";

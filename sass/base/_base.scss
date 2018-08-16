@@ -1,0 +1,17 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  color: $color-black;
+  background-color: $color-white;
+  line-height: 1.2;
+}
+
+.site {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $color-white;
+}
